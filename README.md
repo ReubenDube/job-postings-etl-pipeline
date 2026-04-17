@@ -1,48 +1,22 @@
-# job-postings-etl-pipeline
-End-to-end Python ETL pipeline for job postings data (Data Engineering portfolio project)
-
 # Job Postings ETL Pipeline
 
-**End-to-end data pipeline** built as part of my Data Science / ML Engineer portfolio.
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 
-## Overview
-This project demonstrates a complete **ETL (Extract, Transform, Load)** pipeline using Python. 
-It processes a real-world job postings dataset, cleans it, adds new features, and loads it into a SQLite database.
+**End-to-end Python ETL pipeline** for real-world job postings data — built as a **Data Engineering** portfolio project.
 
-### Key Features
-- Robust file path handling with `pathlib`
-- Comprehensive data cleaning and feature engineering
-- Logging for monitoring and debugging
-- Data loaded into relational database (SQLite)
-- Production-ready folder structure
+## 📋 Project Overview
+This project demonstrates a complete **Extract, Transform, Load (ETL)** pipeline that processes a dataset of ~17,880 job postings. It cleans messy raw data, engineers new features, and loads everything into a relational database.
 
-### Technologies Used
-- **Python**
-- **Pandas** – Data manipulation & cleaning
-- **SQLAlchemy** – Database interaction
-- **SQLite** – Lightweight relational database
-- **Pathlib** – Modern path handling
-- **Logging** – Pipeline monitoring
+**Business Value**: Clean, reliable job data that can be used for analytics, fraud detection, recommendation systems, or powering a job portal.
 
-### Pipeline Steps
-1. **Extract**: Read raw CSV data (`raw_job_postings.csv`)
-2. **Transform**: 
-   - Standardize column names
-   - Handle missing values
-   - Create new features (`has_salary`, `country`)
-3. **Load**: Save cleaned data into `job_postings` table in SQLite
-
-### How to Run
-```bash
-# 1. Clone the repo
-git clone https://github.com/yourusername/job-postings-etl-pipeline.git
-
-# 2. Activate virtual environment
-venv\Scripts\activate     # Windows
-
-# 3. Install dependencies
-pip install -r requirements.txt
-
-# 4. Run the pipeline
-cd scripts
-python etl_pipeline.py
+## 🏗️ Architecture
+```mermaid
+flowchart LR
+    A[Raw CSV\nfake_job_postings.csv] --> B[Extract\nPandas]
+    B --> C[Transform\nCleaning + Feature Engineering]
+    C --> D[Load\nSQLAlchemy + SQLite]
+    D --> E[Interactive Dashboard\nStreamlit]
