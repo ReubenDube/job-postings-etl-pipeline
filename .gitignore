@@ -1,0 +1,17 @@
+# Virtual environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Large data files (never upload these to GitHub)
+data/*.csv
+data/*.db
+data/*.parquet
+
+# Log files
+logs/*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db

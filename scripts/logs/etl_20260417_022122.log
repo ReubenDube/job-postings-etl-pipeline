@@ -1,0 +1,3 @@
+2026-04-17 02:21:22,877 - INFO - === Starting ETL Pipeline ===
+2026-04-17 02:21:22,877 - INFO - Extracting data from data/raw_job_postings.csv
+2026-04-17 02:21:22,879 - ERROR - Extract failed: [Errno 2] No such file or directory: 'data/raw_job_postings.csv'
