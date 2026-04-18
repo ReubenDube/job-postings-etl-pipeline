@@ -13,10 +13,17 @@ This project demonstrates a complete **Extract, Transform, Load (ETL)** pipeline
 
 **Business Value**: Clean, reliable job data that can be used for analytics, fraud detection, recommendation systems, or powering a job portal.
 
-## 🏗️ Architecture
+##  Architecture
 ```mermaid
 flowchart LR
     A[Raw CSV\nfake_job_postings.csv] --> B[Extract\nPandas]
     B --> C[Transform\nCleaning + Feature Engineering]
     C --> D[Load\nSQLAlchemy + SQLite]
     D --> E[Interactive Dashboard\nStreamlit]
+
+
+
+
+
+
+
