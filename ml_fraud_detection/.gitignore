@@ -1,0 +1,14 @@
+echo "# Virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# Data and models
+data/*.db
+models/*.pkl
+models/*.joblib
+
+# Logs and notebooks
+*.log
+.ipynb_checkpoints/
+" > .gitignore
