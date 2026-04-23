@@ -11,4 +11,6 @@ models/*.joblib
 # Logs and notebooks
 *.log
 .ipynb_checkpoints/
-" > .gitignore
+" > .gitignore"data/job_postings.db" 
+"data/job_postings.db" 
+"*.db" 
